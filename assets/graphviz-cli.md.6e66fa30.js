@@ -1,0 +1,39 @@
+import{_ as s,c as n,o as a,a as o}from"./app.51745cc0.js";const d=JSON.parse('{"title":"Command Line Interface","description":"","frontmatter":{},"headers":[],"relativePath":"graphviz-cli.md"}'),p={name:"graphviz-cli.md"},l=o(`<h1 id="command-line-interface" tabindex="-1">Command Line Interface <a class="header-anchor" href="#command-line-interface" aria-hidden="true">#</a></h1><p>To call <code>dot-wasm</code> without installing:</p><div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki"><code><span class="line"><span style="color:#A6ACCD;">npx -p @hpcc-js/wasm dot-wasm </span><span style="color:#89DDFF;">[</span><span style="color:#A6ACCD;">options</span><span style="color:#89DDFF;">]</span><span style="color:#A6ACCD;"> fileOrDot</span></span>
+<span class="line"></span></code></pre></div><p>To install the global command <code>dot-wasm</code> via NPM:</p><div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki"><code><span class="line"><span style="color:#A6ACCD;">npm install --global @hpcc-js/wasm</span></span>
+<span class="line"></span></code></pre></div><p>Usage:</p><div class="language-sh"><button title="Copy Code" class="copy"></button><span class="lang">sh</span><pre class="shiki"><code><span class="line"><span style="color:#A6ACCD;">Usage: dot-wasm </span><span style="color:#89DDFF;">[</span><span style="color:#A6ACCD;">options</span><span style="color:#89DDFF;">]</span><span style="color:#A6ACCD;"> fileOrDot</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">Options:</span></span>
+<span class="line"><span style="color:#A6ACCD;">      --version      Show version number                               </span><span style="color:#89DDFF;">[</span><span style="color:#A6ACCD;">boolean</span><span style="color:#89DDFF;">]</span></span>
+<span class="line"><span style="color:#A6ACCD;">  -K, --layout       Set layout engine </span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">circo </span><span style="color:#89DDFF;">|</span><span style="color:#A6ACCD;"> dot </span><span style="color:#89DDFF;">|</span><span style="color:#A6ACCD;"> fdp </span><span style="color:#89DDFF;">|</span><span style="color:#A6ACCD;"> sfdp </span><span style="color:#89DDFF;">|</span><span style="color:#A6ACCD;"> neato </span><span style="color:#89DDFF;">|</span><span style="color:#A6ACCD;"> osage</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     </span><span style="color:#89DDFF;">|</span><span style="color:#A6ACCD;"> patchwork </span><span style="color:#89DDFF;">|</span><span style="color:#A6ACCD;"> twopi</span><span style="color:#89DDFF;">)</span><span style="color:#A6ACCD;">. By default, dot is used.</span></span>
+<span class="line"><span style="color:#A6ACCD;">  -T, --format       Set output language to one of the supported formats </span><span style="color:#89DDFF;">(</span><span style="color:#A6ACCD;">svg,</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     dot, json, dot_json, xdot_json, plain, plain-ext</span><span style="color:#89DDFF;">)</span><span style="color:#A6ACCD;">. By</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     default, svg is produced.</span></span>
+<span class="line"><span style="color:#A6ACCD;">  -n, --neato-no-op  Sets no-op flag </span><span style="color:#89DDFF;">in</span><span style="color:#A6ACCD;"> neato.</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     </span><span style="color:#89DDFF;">&quot;</span><span style="color:#C3E88D;">-n 1</span><span style="color:#89DDFF;">&quot;</span><span style="color:#A6ACCD;"> assumes neato nodes have already been positioned and</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     all nodes have a pos attribute giving the positions. It</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     </span><span style="color:#89DDFF;">then</span><span style="color:#A6ACCD;"> performs an optional adjustment to remove node-node</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     overlap, depending on the value of the overlap attribute,</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     computes the edge layouts, depending on the value of the</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     splines attribute, and emits the graph </span><span style="color:#89DDFF;">in</span><span style="color:#A6ACCD;"> the appropriate</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     format.</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     </span><span style="color:#89DDFF;">&quot;</span><span style="color:#C3E88D;">-n 2</span><span style="color:#89DDFF;">&quot;</span><span style="color:#A6ACCD;"> Use node positions as specified, with no adjustment</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     to remove node-node overlaps, and use any edge layouts</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     already specified by the pos attribute. neato computes an</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     edge layout </span><span style="color:#89DDFF;">for</span><span style="color:#A6ACCD;"> any edge that does not have a pos</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     attribute. As usual, edge layout is guided by the splines</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     attribute.</span></span>
+<span class="line"><span style="color:#A6ACCD;">  -y, --invert-y     By default, the coordinate system used </span><span style="color:#89DDFF;">in</span><span style="color:#A6ACCD;"> generic output</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     formats, such as attributed dot, extended dot, plain and</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     plain-ext, is the standard cartesian system with the origin</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     </span><span style="color:#89DDFF;">in</span><span style="color:#A6ACCD;"> the lower left corner, and with increasing y coordinates</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     as points move from bottom to top. If the -y flag is used,</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     the coordinate system is inverted, so that increasing</span></span>
+<span class="line"><span style="color:#A6ACCD;">                     values of y correspond to movement from top to bottom.</span></span>
+<span class="line"><span style="color:#A6ACCD;">  -v                 Echo GraphViz library version</span></span>
+<span class="line"><span style="color:#A6ACCD;">  -h, --help         Show </span><span style="color:#82AAFF;">help</span><span style="color:#A6ACCD;">                                         </span><span style="color:#89DDFF;">[</span><span style="color:#A6ACCD;">boolean</span><span style="color:#89DDFF;">]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#A6ACCD;">Examples:</span></span>
+<span class="line"><span style="color:#A6ACCD;">  dot-wasm -K neato -T xdot ./input.dot  Execute NEATO layout and outputs XDOT</span></span>
+<span class="line"><span style="color:#A6ACCD;">                                         format.</span></span>
+<span class="line"></span></code></pre></div>`,7),e=[l];function t(c,r,i,C,A,D){return a(),n("div",null,e)}const u=s(p,[["render",t]]);export{d as __pageData,u as default};
